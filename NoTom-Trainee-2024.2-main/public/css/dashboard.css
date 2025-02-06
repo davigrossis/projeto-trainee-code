@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: rgb(22, 30, 22);
+  
+}
+
+.container {
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.titulo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.titulo h1 {
+  text-align: center;
+  color: #f9cb7a;
+  font-family: "Lobster";
+  font-size: 70px;
+  margin-top: 3vh;
+}
+
+h1:hover {
+  color: rgb(243, 206, 22);
+}
+.titulo img {
+  width: 130px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3%;
+}
+
+.b {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+button {
+  background-color: rgb(209, 203, 147);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.out {
+  background-color: rgb(199, 87, 87);
+}
+
+.out:hover {
+  background-color: red;
+}
+
+button:hover {
+  background-color: rgb(243, 206, 22);
+  color: white;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  justify-content: center;
+  padding: 10px;
+  height: 47px;
+  width: 47px;
+  position: fixed;
+  top: 7px;
+  left: 20;
+}
+
+.side {
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+@media (max-width: 520px) {
+  button {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 3%;
+  }
+
+  .container{
+    margin-left: 8%;
+  }
+  .b {
+    flex-direction: column;
+  }
+
+  .home {
+    padding: 15px;
+    transform: translateX(35px);
+    position: absolute;
+  }
+
+  .home img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .titulo h3 {
+    display: none;
+  }
+}

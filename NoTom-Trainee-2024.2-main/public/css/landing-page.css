@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+body{
+  background-color: rgb(16, 41, 36) ;
+  overflow-x: hidden;
+}
+
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.imagemprincipal{
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  background-size: cover;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 50%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgb(0, 0, 0) 55%);
+}
+
+.imagemsecundaria{
+  display: none;
+}
+
+.textos{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  margin-top: 200px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  text-shadow: 0px 2px 4px rgb(0, 0, 0);
+  z-index: 1;
+}
+
+.textos h1{
+   font-family: 'Lobster';
+   font-size: 100px;
+}
+
+.textos h2{
+   font-size: 25px;
+}
+
+.slide-container {
+  text-align: center;
+  position: relative; 
+}
+
+
+.slide-container h2{
+  font-size: 30px;
+}
+
+.slide-container h3 {
+  text-align: center;
+  color: #F9CB7A;
+  margin-top: 45px;
+  margin-bottom: -8%;
+}
+
+.slide {
+  display: flex;
+  justify-content: left;
+  align-items: center; 
+  margin-top: 10%;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 320px;
+}
+
+.carrossel-infinito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1vh;
+  position: relative;  
+  white-space: nowrap;
+  animation: scroll 25s linear infinite;
+  
+}
+
+
+.carrossel-infinito::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.719));
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.nomeartista{
+  display: inline-block;
+  flex-direction: column;
+  font-size: 15px;
+  gap: 10px;
+  transition: transform 0.3s;
+  overflow: hidden;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.red {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red img {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  display: block;
+}
+
+.red img:hover{
+ filter:sepia(1);
+}
+
+.nomeartista:hover {
+  transform: scale(1.2);
+}
+
+.swiper-container {
+  text-align: center;
+  color: #F9CB7A;
+  padding-bottom: 50px;
+  margin-top: 3%;
+  padding-top: 3%;
+  margin-bottom: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1%;
+  padding-right: 1%;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  display: flex;
+  overflow: hidden;
+  width: 78%;
+  height: fit-content;
+}
+
+.descricao_carrossel{
+  text-align: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.descricao_carrossel h1{
+  color: #F9CB7A;
+  margin-bottom: 3%;
+  font-size: 30px;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 10;
+  color: #ffb433;
+  font-size: 30px; 
+}
+
+
+.swiper-button-next {
+  right: 10px; 
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 10;
+  
+}
+
+.swiper-pagination-bullet {
+ background-color:white;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffb433;
+}
+
+.swiper-wrapper{
+  display: flex;
+}
+
+.swiper-slide:hover{
+  display: absolute;
+  z-index: 5;
+  outline: 3px solid #ffb433;
+}
+
+.swiper-slide img{
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 25 / 20;
+  object-fit: cover;
+}
+
+<<<<<<< HEAD
+.perfil{
+  display: flex;
+}
+
+=======
+>>>>>>> revisao-fernanda
+.car1 button{
+  color: black;
+  padding: 15px;
+}
+
+.car1 p{
+  text-align: left;
+  margin: 5% ;
+  color: black;
+}
+
+
+.car1 h2{
+  text-align: left;
+  margin: 5px;
+  color: black;
+}
+
+
+
+.nav-item{
+  height: 100px;
+}
+
+
+.post-texto {
+
+  height: 70px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.ver-mais {
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  color: black;
+  border: none;
+  background-color: #D4A54D;
+  padding: 4%;
+  border-radius: 5px;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+.ver-mais:hover{
+  background-color:#ffb433;
+  color: white;
+}
+
+.car1 .post-texto {
+  position: relative;
+}
+
+.car1 .post-texto.truncado + .ver-mais {
+  display: block;
+}
+
+.car1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.swiper-slide {
+  background-color: #ffdf9e;
+  border-radius: 20px;
+  max-width: 400px;
+  max-height: 550px;
+  justify-content: space-between;
+  text-align: center;
+  align-items:center ;
+  display: flex;
+  padding: 1%;
+  flex-direction: column;
+  transition: border 0.3s ease; 
+  border: 2px solid transparent;
+}
+
+/*
+@media (max-width:768px){
+ .textos{
+  width: 100%;
+  margin-left: -20%;
+ }
+
+ .textos h1{
+  font-size: 10vw;
+ }
+
+ .textos h2{
+  font-size: 3vw;
+ }
+
+ 
+.perfil{
+  margin-top: 100%;
+}
+
+}
+
+
+@media (max-width: 900px){
+  .textos h2{
+    margin-bottom: 45%;
+  }
+
+}
+*/
+
+/*
+@media (max-width: 550px){
+
+  
+.perfil{
+  margin-top: 70%;
+}
+
+
+  }*/
+
+
+@media (max-width: 480px){
+  .textos h1{
+    font-size: 20vw;
+    /*margin-bottom: 100%;*/
+    margin-left: 15%;
+  }
+
+  .textos h2{
+    font-size: 5vw;
+    margin-left: 10%;
+    margin-bottom: 130%;
+  }
+
+  .postagem {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+
+  
+  .swiper-slide{
+    margin-top: 14%;
+    width: 400px;
+  }
+
+ .slide-container h2{
+  margin-top: -15%;
+ }
+
+ .slide-container h3{
+  margin-top: 5%;
+ }
+
+ .slide-container{
+  margin-top: 25%;
+ }
+
+ .nomeartista{
+  margin: 12px;
+  width: 160px;
+ }
+
+
+ .imagemsecundaria{
+ display: block;
+ width: 100%;
+ height: auto;
+ }
+
+ .imagemsecundaria{
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  background-size: cover;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0) 50%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 7%, rgb(0, 0, 0) 50%);
+}
+
+ .imagemprincipal{
+  display: none;
+ }
+
+
+.slide-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.carrossel-infinito::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.759), rgba(0, 0, 0, 0.719));
+  opacity: 0.7; 
+  z-index: -1; 
+}
+
+
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0); 
+  }
+  to {
+    transform: translateX(-100%); 
+  }
+}
